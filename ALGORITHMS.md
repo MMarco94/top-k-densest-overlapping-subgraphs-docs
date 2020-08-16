@@ -144,7 +144,7 @@ It's important to point out that the number of partition $|P|$ can grow up to $m
 
 #### Extracting the node
 Let's momentarely forget about $f(\{w \in W \mid v \in w\})$ by assuming that it is equal among all nodes.  
-Than extracting the node with the minimum adjusted degree will be equivalent to extracting the node with the minimum degree.  
+Then extracting the node with the minimum adjusted degree will be equivalent to extracting the node with the minimum degree.  
 To do so, we can have all the nodes in a min heap. This however won't be efficient, since each extraction will take $O(|V|)$ time.
 
 By observing that many nodes will share the same degree, we can introduce the concept of a "bucket" as a set of nodes that share the same degree.  
@@ -157,7 +157,7 @@ It's possible to further optimize this by observing that nodes with an high degr
 
 ---
 Let's remember that this structure only works for nodes with the same $f(\{w \in W \mid v \in w\})$. It's in fact necessary to replicate this structure for each partition of $V$, as in the previous section. 
-To extract the node with the minimum adjusted degree it's necessary to look at the node with the minimum degree for each partition, and choose the minimum among those. 
+To extract the node with the minimum adjusted degree it's necessary to look at the nodes with the minimum degree for each partition, and choose the minimum among those. 
 
 ## Final Complexity
 This table summarises the complexity of each operation discussed so far
@@ -174,5 +174,5 @@ This table summarises the complexity of each operation discussed so far
 The final complexity for extracting a subgraph is $O(|P|*|W|*|V| + |E|)$. 
 This means that for extracting $k$ subgraphs, the total complexity is $O(k^2*|P|*|V| + k|E|)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MDAxMDg3NSwzMzg2MzQzNjZdfQ==
+eyJoaXN0b3J5IjpbLTIwMjg0NTU4MDYsMzM4NjM0MzY2XX0=
 -->
