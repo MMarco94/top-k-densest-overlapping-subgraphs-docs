@@ -131,7 +131,7 @@ With this information, it's easy to show that the marginal gain can indeed be co
 ### Extracting the node
 Following the step `2.a` of the main procedure, it is required to extract the node that minimizes the adjusted degree.
 In order to do so efficiently, it's necessary to rethink the adjusted degree as the differece of two quantities: 
-$$adjustedDegree(v,A) = deg(v; A) - 4\lambda\sum_{\{w \in W \mid v \in w\}}\frac{|A \cap w|}{|w|} = deg(v; A) - f(\{w \in W \mid v \in w\})$$
+$$adjustedDegree(v,A) = deg(v; A) - 4\lambda\sum_{w \in W \mid v \in w}\frac{|A \cap w|}{|w|} = deg(v; A) - f(\{w \in W \mid v \in w\})$$
 
 #### Computing $f(\{w \in W \mid v \in w\})$
 It can be observed that the quantity $\{w \in W \mid v \in w\}$ will be the same for a lot of nodes. 
@@ -174,5 +174,5 @@ This table summarises the complexity of each operation discussed so far
 The final complexity for extracting a subgraph is $O(|P|*|W|*|V| + |E|)$. 
 This means that for extracting $k$ subgraphs, the total complexity is $O(k^2*|P|*|V| + k|E|)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTI1MTcyMDUsMzM4NjM0MzY2XX0=
+eyJoaXN0b3J5IjpbLTk0MDAxMDg3NSwzMzg2MzQzNjZdfQ==
 -->
