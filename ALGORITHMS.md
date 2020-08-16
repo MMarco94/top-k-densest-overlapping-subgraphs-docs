@@ -1,11 +1,11 @@
 
 # Top-k densest overlapping subgraphs  
   
-This document provides an overview at the algorithms used in this project in order to implement the "Top-k overlapping densest subgraphs" method introduced in the homonym paper by Esther Galbrun, Aristides Gionis and Nikolaj Tatti.  
+This document provides an overview of the algorithms used to implement the "Top-k overlapping densest subgraphs" method introduced in the homonym paper by Esther Galbrun, Aristides Gionis and Nikolaj Tatti.  
   
 ## General overview  
   
-The general goal of this method is to iteratively extract the densest subgraph from the original graph, allowing overlaps.   
+The goal of this method is to iteratively extract the densest subgraph from a graph, allowing overlaps.   
   
 ### Naming conventions  
   
@@ -172,5 +172,5 @@ This table summarises the complexity of each operation discussed so far
 The final complexity for extracting a subgraph is $O(|P|*|W|*|V| + |E|)$. 
 This means that for extracting $k$ subgraphs, the total complexity is $O(k^2*|P|*|V| + k|E|)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4NjM0MzY2XX0=
+eyJoaXN0b3J5IjpbLTEyMDMwNzg2NTgsMzM4NjM0MzY2XX0=
 -->
