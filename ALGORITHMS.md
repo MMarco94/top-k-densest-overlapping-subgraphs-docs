@@ -23,8 +23,8 @@ $$adjustedDegree(v,A) = deg(v; A) - 4\lambda\sum_{w \in W \mid v \in w}\frac{|A 
 The density of a graph $U = (V_u, E_u)$ is
 $$dens(U) = \frac{|E_u|}{|V_u|}$$
 
-The distance $D$ between two graph $X$ and $Y$ is
-$$D(X,Y) = 2 - \frac{|X \cap Y| ^ 2}{|X||Y|} \quad \text{if} \ X \neq Y,\quad 0\ \text{otherwise}$$
+The distance $D$ between two graph $X=(V_X, E)$ and $Y=(V_Y,E)$ is
+$$D(X,Y) = 2 - \frac{|V_X \cap V_Y| ^ 2}{|V_X||V_Y|} \quad \text{if} \ V_X \neq V_Y,\quad 0\ \text{otherwise}$$
 
 The marginal gain of a graph $U$ is
 $$marginalGain(U) = \frac{1}{2}dens(U)+\lambda\sum_{w \in W}D(U,W)$$
@@ -173,5 +173,5 @@ This table summarises the complexity of each operation discussed so far
 The final complexity for extracting a subgraph is $O(|P|*|W|*|V| + |E|)$. 
 This means that for extracting $k$ subgraphs, the total complexity is $O(k^2*|P|*|V| + k|E|)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzg5MDQyNSwzMzg2MzQzNjZdfQ==
+eyJoaXN0b3J5IjpbLTYyNTY0NjIwMCwzMzg2MzQzNjZdfQ==
 -->
