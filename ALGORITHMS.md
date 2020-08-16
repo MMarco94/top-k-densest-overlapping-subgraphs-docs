@@ -51,7 +51,7 @@ After considering these observations, it is possible to execute this step in `O(
 - The subgraph is initially equal to the whole graph
 - It is possible to assign an index $0,...,n-1$ to each node in the graph 
 
-The subgraph can be represented with a boolean array `node_mask` that represents whether a node is in the graph or not. 
+The subgraph can be represented with a boolean array `nodeMask` that represents whether a node is in the graph or not. 
 ```
 class Subgraph {
 	nodeMask = BooleanArray(n, true)
@@ -174,5 +174,5 @@ This table summarises the complexity of each operation discussed so far
 The final complexity for extracting a subgraph is $O(|P|*|W|*|V| + |E|)$. 
 This means that for extracting $k$ subgraphs, the total complexity is $O(k^2*|P|*|V| + k|E|)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTU5MjE5OCwzMzg2MzQzNjZdfQ==
+eyJoaXN0b3J5IjpbLTE5NTI1MTcyMDUsMzM4NjM0MzY2XX0=
 -->
