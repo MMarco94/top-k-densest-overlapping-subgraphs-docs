@@ -17,7 +17,7 @@ $W$ is the set of all already extracted subgraphs. At the end of the execution, 
 
 ### Definitions
 The adjusted degree of a node $v \in A$, where $A$ is a subgraph of $G$ is
-$$adjustedDegree(v,A) = deg(v; A) - 4\lambda\sum_{\{w \in W \mid v \in w\}}\frac{|A \cap w|}{|w|}$$
+$$adjustedDegree(v,A) = deg(v; A) - 4\lambda\sum_{w \in W \mid v \in w}\frac{|A \cap w|}{|w|}$$
 
 The density of a graph $U = (V_u, E_u)$ is
 $$dens(U) = \frac{|E_u|}{|V_u|}$$
@@ -172,5 +172,5 @@ This table summarises the complexity of each operation discussed so far
 The final complexity for extracting a subgraph is $O(|P|*|W|*|V| + |E|)$. 
 This means that for extracting $k$ subgraphs, the total complexity is $O(k^2*|P|*|V| + k|E|)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjA1NzY0NTUsMzM4NjM0MzY2XX0=
+eyJoaXN0b3J5IjpbNjgyNTc5OTM1LDMzODYzNDM2Nl19
 -->
