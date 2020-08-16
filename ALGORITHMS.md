@@ -158,7 +158,7 @@ It's possible to further optimize this by observing that nodes with an high degr
 ---
 Let's remember that this structure only works for nodes with the same $f(\{w \in W \mid v \in w\})$. It's in fact necessary to replicate this structure for each partition of $V$, as in the previous section. 
 To extract the node with the minimum adjusted degree it's necessary to look at each partition for the node with the minimum degree, and choose the one that minimizes the adjusted degree. 
-This will take $O(|P|)$  to extract the node, and $O(|P||W|)$
+This will take $O(|P|)$  to extract the node, and $O(|P||W|)$ to update the adjusted degree for each partition.
 
 ## Final Complexity
 This table summarises the complexity of each operation discussed so far
@@ -170,10 +170,10 @@ This table summarises the complexity of each operation discussed so far
 | Converting the copyed subgraph to a standard representation		| $O(\vert V \vert)$ | $1$
 | Extracting the node with minimum adjusted degree					| $O(\vert P \vert)$ | $O(\vert V \vert)$
 | Updating the degrees of a neighbor of the extracted node			| $O(1)$ | $O(\vert E \vert)$
-| Keeping the adjusted degree updated for each partition			| $O(\vert P \vert * \vert W \vert)$ | $O(\vert V \vert)$
+| Keeping the adjusted degree updated for each partition			| $O(\vert P \vert\ \vert W \vert)$ | $O(\vert V \vert)$
 
-The final complexity for extracting a subgraph is $O(|P|*|W|*|V| + |E|)$. 
-This means that for extracting $k$ subgraphs, the total complexity is $O(k^2*|P|*|V| + k|E|)$
+The final complexity for extracting a subgraph is $O(|P|\ |W|\ |V| + |E|)$. 
+This means that for extracting $k$ subgraphs, the total complexity is $O(k^2|P|\ |V| + k|E|)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzExNDIzMjQ3LDMzODYzNDM2Nl19
+eyJoaXN0b3J5IjpbMTU1NjM2NjMwNCwzMzg2MzQzNjZdfQ==
 -->
