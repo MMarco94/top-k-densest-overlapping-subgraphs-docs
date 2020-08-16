@@ -157,7 +157,8 @@ It's possible to further optimize this by observing that nodes with an high degr
 
 ---
 Let's remember that this structure only works for nodes with the same $f(\{w \in W \mid v \in w\})$. It's in fact necessary to replicate this structure for each partition of $V$, as in the previous section. 
-To extract the node with the minimum adjusted degree it's necessary to look at the nodes with the minimum degree for each partition, and choose the minimum among those. 
+To extract the node with the minimum adjusted degree it's necessary to look at each partition for the node with the minimum degree, and choose the one that minimizes the adjusted degree. 
+This will take $O(|P|)$  to extract the node, and $O(|P||W|)$
 
 ## Final Complexity
 This table summarises the complexity of each operation discussed so far
@@ -174,5 +175,5 @@ This table summarises the complexity of each operation discussed so far
 The final complexity for extracting a subgraph is $O(|P|*|W|*|V| + |E|)$. 
 This means that for extracting $k$ subgraphs, the total complexity is $O(k^2*|P|*|V| + k|E|)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjg0NTU4MDYsMzM4NjM0MzY2XX0=
+eyJoaXN0b3J5IjpbMzExNDIzMjQ3LDMzODYzNDM2Nl19
 -->
