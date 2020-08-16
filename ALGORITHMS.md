@@ -14,8 +14,8 @@ $V$ is the set of nodes in $G$.
 $E$ is the set of edges in $G$.  
 $n = |V|$ is the number of nodes in $G$.  
 A `subgraph` is a graph constructed from $G$ by removing nodes.
-$W$ is the set of all already extracted subgraphs. At the end of the execution, this will be the result of the algorithm
-$\lambda$ is a parameter $>0$ for this algorithm, chosen by the caller
+$W$ is the set of all already extracted subgraphs. At the end of the execution, this will be the result of the algorithm.
+$\lambda$ is a parameter $>0$ for this algorithm, chosen by the caller.
 
 ### Definitions
 The adjusted degree of a node $v \in A$, where $A$ is a subgraph of $G$ is
@@ -174,5 +174,5 @@ This table summarises the complexity of each operation discussed so far
 The final complexity for extracting a subgraph is $O(|P|*|W|*|V| + |E|)$. 
 This means that for extracting $k$ subgraphs, the total complexity is $O(k^2*|P|*|V| + k|E|)$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjY2NjI4OTQsMzM4NjM0MzY2XX0=
+eyJoaXN0b3J5IjpbMTYzMTU5MjE5OCwzMzg2MzQzNjZdfQ==
 -->
